@@ -26,4 +26,8 @@ public class Record {
    public String getPlate() {
       return plate;
    }
+   
+   public String toString() {
+      return Integer.toString(exit);
+   }
 }

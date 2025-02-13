@@ -46,6 +46,19 @@ public class EZPass1 {
       System.out.println("Trip time: " + t.getTripTime());
       System.out.println("Speed: " + t.getSpeed());
       System.out.println("Toll Cost: " + t.getToll());
+      System.out.println();
+      
+      Record r3 = new Record(157, "20241013010023", "LMB-3211");
+      Record r4 = new Record(189, "20241013014655", "LMB-3211");
+      Trip nightDrive = new Trip(r3, r4);
+      System.out.println("On exit: " + nightDrive.getOnRecord());
+      System.out.println("Off exit: " + nightDrive.getOffRecord());
+      System.out.println("Going east: " + nightDrive.goingEast());
+      System.out.println("Distance: " + nightDrive.getDistance());
+      System.out.println("Trip time: " + nightDrive.getTripTime());
+      System.out.println("Speed: " + nightDrive.getSpeed());
+      System.out.print("Toll Cost: " + nightDrive.getToll());
+
    }
 
 
